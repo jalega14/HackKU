@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
@@ -72,13 +73,6 @@ int main()
     return 0;
 }
 
-/*********************************************
-    FUNCTION TO RETURN GAME STATUS
-    1 FOR GAME IS OVER WITH RESULT
-    -1 FOR GAME IS IN PROGRESS
-    O GAME IS OVER AND NO RESULT
-**********************************************/
-
 int checkwin()
 {
     if (square[1] == square[2] && square[2] == square[3])
@@ -114,12 +108,6 @@ int checkwin()
         return -1;
 }
 
-
-/*******************************************************************
-     FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
-********************************************************************/
-
-
 void board()
 {
     system("cls");
@@ -143,4 +131,3 @@ void board()
 
     cout << "     |     |     " << endl << endl;
 }
-
